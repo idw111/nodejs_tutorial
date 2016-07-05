@@ -1,10 +1,21 @@
 # nodejs_tutorial
 
+Javascript
+- 
+- 
+
 Nodejs
 - NPM (node package manager)
+  - install, uninstall
+  - package.json
+  - publishing npm module
 - async calls (setTimeout, ajax call)
+  - asyncjs
+  - promise
 - Babel, Webpack, gulp (build tools)
-- es6
+- ES6
+  - Array functions (map, forEach, filter, reduce, ...)
+  - arrow function
 
 Back-end
 - Expressjs (web framework)
