@@ -1,8 +1,8 @@
 # nodejs_tutorial
 
 Javascript
-- 
-- 
+- ...
+- ...
 
 Nodejs
 - NPM (node package manager)
