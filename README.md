@@ -13,6 +13,7 @@ Back-end
 - Sequelizejs (mysql orm)
   - model
   - association
+- pug (view)
 
 Front-end
 - React (view)
