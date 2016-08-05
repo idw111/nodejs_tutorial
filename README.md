@@ -11,7 +11,6 @@
   - HTML, CSS, Javascript
   - NodeJS
   - NetLogo
-- Front-end, Visualization
 
 
 ## HoneyPic
@@ -25,17 +24,21 @@
 - [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript)
   - ES5
   - ES6 ([Babel](https://babeljs.io/))
-- Flexible
+- Flexible (dynamic typing, runtime evaluation)
 - Everywhere
+- Data (Array [], Object {}, json)
+- Math
+- boolean false (false, null, 0, '', NaN, undefined)
+- =, ==, ===
 
 
-## [Nodejs](./nodejs.md)
+## [Nodejs](./nodejs/README.md)
 - NPM (node package manager)
   - install, uninstall
   - package.json
   - publishing npm module
 - async calls (setTimeout, ajax call)
-  - asyncjs
+  - async.js
   - promise
 - Babel, Webpack, gulp (build tools)
 - ES6
