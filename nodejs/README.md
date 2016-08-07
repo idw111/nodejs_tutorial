@@ -20,12 +20,12 @@
 
 
 ## 비동기 호출
-- ajax, timeout, io
-- async.js
-- promise
+- timeout, ajax, file io, database, ...
+- [async.js](https://github.com/caolan/async)
+- [promise](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 
 ## 빌드도구
-- gulp
+- gulp, grunt
 - webpack
 - babel

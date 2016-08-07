@@ -1,21 +1,7 @@
 # NodeJS Tutorial
 
 
-## Lecturer
-- Dongwon Lim
-- BS in Naval Architecture, 1996-2011
-- PhD in MIS, 2009-2014
-- Software Engineer
-  - C/C++
-  - PHP, MySQL, WordPress
-  - HTML, CSS, Javascript
-  - NodeJS
-  - NetLogo
-
-
-## HoneyPic
-- A trusted global marketplace that connects professional photographers and potential customers all across the world
-- [HoneyPic](https://honeypic.com)
+## [Lecturer](https://github.com/idw111/profile)
 
 
 ## Javascript
@@ -24,8 +10,9 @@
 - [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript)
   - ES5
   - ES6 ([Babel](https://babeljs.io/))
-- Flexible (dynamic typing, runtime evaluation)
+- Flexible
 - Everywhere
+- Don't be afraid of using new modules
 - Data (Array [], Object {}, json)
 - Math
 - boolean false (false, null, 0, '', NaN, undefined)
@@ -46,17 +33,17 @@
   - arrow function
 
 
-## [Back-end](./backend.md)
-- Expressjs (web framework)
+## [Back-end](./backend/README.md)
+- express.js (web framework)
   - middleware
   - router
-- Sequelizejs (mysql orm)
+- sequelize.js (mysql orm)
   - model
   - association
 - pug (view)
 
 
-## [Front-end](./frontend.md)
+## [Front-end](./frontend/README.md)
 - React (view)
 - Redux (data)
 
