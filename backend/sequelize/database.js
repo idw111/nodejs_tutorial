@@ -1,21 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
-const mysql = {
-	database: 'tutorial',
-	username: 'root',
-	password: 'arachne',
-	options: {
-		host: 'localhost',
-		port: 3306,
-		dialect: 'mysql',
-		pool: {
-			max: 10,
-			min: 0,
-			idle: 10000
-		}
-	}
-};
+const mysql = require('./mysql');
 
 const sequelize = new Sequelize(mysql.database, mysql.username, mysql.password, Object.assign(mysql.options, {
 	timezone: '+09:00'

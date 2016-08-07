@@ -4,7 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
+var SessionStore = require('express-mysql-session');
+var mysql = require('./mysql');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -22,6 +24,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+	name: 'sessionId',
+	secret: '@tutorial!',
+	maxAge: 1000 * 60 * 60 * 24 * 30,
+	saveUninitialized: true,
+	resave: true,
+	store: new SessionStore({
+		host: mysql.options.host,
+		port: mysql.options.port,
+		user: mysql.username,
+		password: mysql.password,
+		database: mysql.database
+	})
+}));
 
 app.use('/', routes);
 app.use('/users', users);

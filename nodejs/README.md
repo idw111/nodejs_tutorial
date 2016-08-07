@@ -19,6 +19,11 @@
 - promise
 
 
+## 모듈화
+- AMD
+- CJS
+
+
 ## 비동기 호출
 - timeout, ajax, file io, database, ...
 - [async.js](https://github.com/caolan/async)
