@@ -7,3 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+
+var test = () => {
+	console.log(this.a, this.b);
+}
+
+var temp = {a: 1, b: 2};
+var test1 = test.bind(temp);
+
+test1();

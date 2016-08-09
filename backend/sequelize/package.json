@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
     "mysql": "^2.11.1",
     "sequelize": "^3.23.6"
   },
   "devDependencies": {},
   "scripts": {
-	"start": "nodemon index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

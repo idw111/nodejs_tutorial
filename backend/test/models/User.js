@@ -12,7 +12,10 @@ module.exports = (Schema, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false,
 			validates: {notEmpty: true}
-		}
+		},
+		photo: DataTypes.STRING,
+		firstName: DataTypes.STRING,
+		lastName: DataTypes.STRING
 	};
 
 	const indexes = [
@@ -24,7 +27,7 @@ module.exports = (Schema, DataTypes) => {
 
 	const classMethods = {
 		associate(models) {
-			User.hasMany(models.Task, {as: 'tasks', foreignKey: 'userId', constraints: false});
+			// User.hasMany(models.Task, {as: 'tasks', foreignKey: 'userId', constraints: false});
 		}
 	};
 

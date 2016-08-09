@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"run-server": "echo run-server",
+	"start": "",
+	"stop": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idw111/nodejs_tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idw111/nodejs_tutorial/issues"
+  },
+  "homepage": "https://github.com/idw111/nodejs_tutorial#readme",
+  "dependencies": {}
+}

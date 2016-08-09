@@ -7,9 +7,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var SessionStore = require('express-mysql-session');
 var mysql = require('./mysql');
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
+var timestamp = require('./middleware/timestamp')
 var app = express();
 
 // view engine setup
@@ -39,9 +37,13 @@ app.use(session({
 		database: mysql.database
 	})
 }));
+app.use(timestamp);
 
-app.use('/', routes);
-app.use('/users', users);
+// router
+var router = require('./routes/router');
+app.use('/', router);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

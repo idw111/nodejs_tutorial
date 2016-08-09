@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	ul.users
+		each user in users
+			li
+				.photo: img(src=user.photo)
+				.username #{user.username}
